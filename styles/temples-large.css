@@ -14,9 +14,11 @@
         flex-shrink: 0;
     }
 
+    /* Selectores con especificidad para asegurar que h1 se muestre sin recurrir a !important */
     header h1,
-    header.open h1 {
-        display: block !important;
+    header.open h1,
+    header.open .header-content h1 {
+        display: block;
         white-space: nowrap;
     }
 
@@ -24,9 +26,11 @@
         display: none;
     }
 
-    /* Large screens: Menu aligned to the right */
-    nav {
-        display: flex !important;
+    /* Selectores con mayor especificidad para que el nav y nav.open siempre sean flex horizontal */
+    header nav,
+    header nav.open,
+    nav#primary-nav {
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
@@ -50,7 +54,7 @@
         color: var(--ink-black);
     }
 
-    /* Large screens */
+    /* Grid de 3 columnas */
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
         max-width: 100%;
