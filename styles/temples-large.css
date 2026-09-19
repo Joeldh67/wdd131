@@ -15,9 +15,9 @@
     }
 
     /* selectors for h1 */
-    header h1,
-    header.open h1,
-    header.open .header-content h1 {
+    header .site-title,
+    header.open .site-title,
+    header.open .header-content .site-title {
         display: block;
         white-space: nowrap;
     }
