@@ -14,7 +14,7 @@
         flex-shrink: 0;
     }
 
-    /* Selectores con especificidad para asegurar que h1 se muestre sin recurrir a !important */
+    /* selectors for h1 */
     header h1,
     header.open h1,
     header.open .header-content h1 {
@@ -26,7 +26,7 @@
         display: none;
     }
 
-    /* Selectores con mayor especificidad para que el nav y nav.open siempre sean flex horizontal */
+    /* selectors for nav */
     header nav,
     header nav.open,
     nav#primary-nav {
@@ -54,7 +54,7 @@
         color: var(--ink-black);
     }
 
-    /* Grid de 3 columnas */
+    /* grid columns */
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
         max-width: 100%;
