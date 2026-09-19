@@ -21,7 +21,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 header {
     background-color: var(--ink-black);
     color: var(--porcelain);
@@ -41,7 +40,6 @@ header {
     letter-spacing: 0.5px;
 }
 
-/* Menu button */
 #menu-button {
     background: none;
     border: none;
@@ -61,7 +59,6 @@ header {
     content: "✕";
 }
 
-/* hide title and show menu button */
 header.open .site-title {
     display: none;
 }
@@ -73,7 +70,6 @@ header.open .header-content {
     padding: 0;
 }
 
-/* mobile navigation */
 nav {
     display: none;
     flex-direction: column;
@@ -99,7 +95,6 @@ nav a:hover {
     color: var(--white);
 }
 
-/* Principal Content */
 main {
     flex: 1;
     width: 90%;
@@ -114,7 +109,6 @@ main h1 {
     color: var(--ink-black);
 }
 
-/* adaptable grid */
 .temple-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -122,7 +116,6 @@ main h1 {
     justify-items: center;
 }
 
-/* card */
 figure {
     background-color: var(--white);
     border: 1px solid var(--powder-blue);
@@ -151,7 +144,6 @@ figcaption {
     margin-top: auto;
 }
 
-/* Footer */
 footer {
     background-color: var(--ink-black);
     color: var(--porcelain);

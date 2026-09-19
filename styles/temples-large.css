@@ -14,7 +14,6 @@
         flex-shrink: 0;
     }
 
-    /* selectors for h1 */
     header .site-title,
     header.open .site-title,
     header.open .header-content .site-title {
@@ -26,7 +25,6 @@
         display: none;
     }
 
-    /* selectors for nav */
     header nav,
     header nav.open,
     nav#primary-nav {
@@ -54,7 +52,6 @@
         color: var(--ink-black);
     }
 
-    /* grid columns */
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
         max-width: 100%;
